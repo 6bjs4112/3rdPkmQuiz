@@ -7,7 +7,6 @@ $color-bg:#F6F6F6;
 @mixin bg_ball(){
   background-image: url('../public/img/bg_veryBig.png');
   background-position: center;
-  background-size: cotain;
 }
 @mixin flex($x:space-between, $y:center){
   display: flex;
@@ -28,6 +27,8 @@ $color-bg:#F6F6F6;
   font-weight: 400;
   font-style: normal;
 }
+// html,body,main, #root{height: 100%;}
+html{@include bg_ball();}
 //=========↓↓↓======홈 메인화면===========↓↓↓=====================
 .homepage{
   background-image: url('../public/img/bg_veryBigBlue.png');
@@ -656,4 +657,17 @@ body{ -ms-overflow-style: none;}
 .swal2-popup {
   font-size: 1rem !important;
   font-family: 'DungGeunMo';
+}
+//로딩 메세지
+.infinite-scroll-component__outerdiv{
+  height: 100%;
+  .infinite-scroll-component{
+    height: 100%;
+    .loading-message{
+      @include flex(center,flex-start){};
+      width: 100%;height: 100%;
+      font-size: 2rem;
+      font-family: 'DungGeunMo';
+    }
+  }
 }

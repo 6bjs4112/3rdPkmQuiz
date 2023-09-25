@@ -66,6 +66,10 @@ const MyPokemon = (props: Props) => {
             <a className='upBtn' onClick={scrollToTop}>
                 <img src='/3rdPkmQuiz/img/icon/upBtn_small.png'/>
             </a>
+            
+            <div className=''>
+
+            </div>
 
             <nav className='botNav'>
                 <div className='navWrap'>
