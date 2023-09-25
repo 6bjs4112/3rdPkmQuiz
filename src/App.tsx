@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {Route, Routes, Link, HashRouter} from 'react-router-dom';
+import Home from './Home';
+import Quiz from './pages/Quiz';
+import Pokedex from './pages/Pokedex';
+import Detail from './pages/Detail';
+import MyPokemon from './pages/MyPokemon';
+import PokemonContext from './PokemonContext';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <main>
+        <PokemonContext>
+          <Routes>
+            {/* <Route path='/test'element={<Test/>}/> */}
+            <Route path='/'element={<Home/>}/>
+            <Route path='/quiz'element={<Quiz/>}/>
+            <Route path='/pokedex'element={<Pokedex/>}/>
+            <Route path='/mypokemon'element={<MyPokemon/>}/>
+            <Route path='/detail'element={<Detail/>}/>
+            <Route path='/:id'element={<Detail/>}/>
+          </Routes>
+        </PokemonContext>
+      </main>
+    </HashRouter>
   );
 }
 
