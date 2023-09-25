@@ -87,7 +87,7 @@ const Detail = (props: Props) => {
         <h1>포켓몬 도감</h1>
 
         <a className='backBtn' onClick={goBack}>
-          <img src='./img/icon/backBtn_small.png'/>
+          <img src='/3rdPkmQuiz/img/icon/backBtn_small.png'/>
         </a>
       </div>
       {
@@ -143,7 +143,7 @@ const Detail = (props: Props) => {
           <div className='buyBtn' onClick={purchase}>
             <p>구입하기</p>
             <div className='pay'>
-              <img src='./img/icon/icon_coin.svg'/>
+              <img src='/3rdPkmQuiz/img/icon/icon_coin.svg'/>
               <code>
                 {
                   pokemonData.map((obj:any)=>(
@@ -162,25 +162,25 @@ const Detail = (props: Props) => {
         <div className='navWrap'>
             <figure className='navBtn'>
                 <Link to="/quiz">
-                <img src='./img/icon/nav_white_pokeball.png'/>
+                <img src='/3rdPkmQuiz/img/icon/nav_white_pokeball.png'/>
                 퀴즈
                 </Link>
             </figure>
             <figure className='navBtn'>
                 <Link to="/">
-                <img src='./img/icon/nav_home.png'/>
+                <img src='/3rdPkmQuiz/img/icon/nav_home.png'/>
                 홈
                 </Link>
             </figure>
             <figure className='navBtn'>
                 <Link to="/pokedex">
-                <img src='./img/icon/nav_dex.png'/>
+                <img src='/3rdPkmQuiz/img/icon/nav_dex.png'/>
                 도감
                 </Link>
             </figure>
             <figure className='navBtn'>
                 <Link to="/mypokemon">
-                <img src='./img/icon/nav_love.png'/>
+                <img src='/3rdPkmQuiz/img/icon/nav_love.png'/>
                 <span style={{whiteSpace: 'nowrap'}}>내 포켓몬</span>
                 </Link>
             </figure>
