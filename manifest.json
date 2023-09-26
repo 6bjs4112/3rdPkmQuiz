@@ -5,7 +5,8 @@
     {
       "src": "/3rdPkmQuiz/favicons/favicon.ico",
       "sizes": "64x64",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "purpose":"any"
     },
     {
       "src": "/3rdPkmQuiz/favicons/favicon-196x196.png",
