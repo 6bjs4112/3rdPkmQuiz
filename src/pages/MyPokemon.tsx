@@ -73,30 +73,30 @@ const MyPokemon = (props: Props) => {
 
             <nav className='botNav'>
                 <div className='navWrap'>
-                    <figure className='navBtn'>
-                        <Link to="/quiz">
-                        <img src='/3rdPkmQuiz/img/icon/nav_white_pokeball.png'/>
+                <figure className='navBtn'>
+                    <Link to="/quiz">
+                        <img id='pkball' src='/3rdPkmQuiz/img/icon/nav_white_pokeball.png'/>
                         퀴즈
-                        </Link>
-                    </figure>
-                    <figure className='navBtn'>
-                        <Link to="/">
-                        <img src='/3rdPkmQuiz/img/icon/nav_home.png'/>
+                    </Link>
+                </figure>
+                <figure className='navBtn'>
+                    <Link to="/">
+                        <img id='home' src='/3rdPkmQuiz/img/icon/nav_home.png'/>
                         홈
-                        </Link>
-                    </figure>
-                    <figure className='navBtn'>
-                        <Link to="/pokedex">
-                        <img src='/3rdPkmQuiz/img/icon/nav_dex.png'/>
+                    </Link>
+                </figure>
+                <figure className='navBtn'>
+                    <Link to="/pokedex">
+                        <img id='dex' src='/3rdPkmQuiz/img/icon/nav_dex.png'/>
                         도감
-                        </Link>
-                    </figure>
-                    <figure className='navBtn'>
-                        <Link to="/mypokemon">
-                        <img src='/3rdPkmQuiz/img/icon/nav_love.png'/>
+                    </Link>
+                </figure>
+                <figure className='navBtn'>
+                    <Link to="/mypokemon">
+                        <img id='love' src='/3rdPkmQuiz/img/icon/nav_love.png'/>
                         <span style={{whiteSpace: 'nowrap'}}>내 포켓몬</span>
-                        </Link>
-                    </figure>
+                    </Link>
+                </figure>
                 </div>
             </nav>
         </section>
