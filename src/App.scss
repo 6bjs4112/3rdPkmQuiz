@@ -28,8 +28,8 @@ $color-bg:#F6F6F6;
   font-style: normal;
 }
 // html,body,main, #root{height: 100%;}
-html{@include bg_ball();}
-body {
+html{}
+body {@include bg_ball();
   margin: 0;  padding: 0;
 }
 //=========↓↓↓======홈 메인화면===========↓↓↓=====================
