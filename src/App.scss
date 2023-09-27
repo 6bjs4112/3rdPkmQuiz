@@ -189,7 +189,7 @@ body {@include bg_ball();
     width: 100%;
     position: fixed; bottom: 30%;
     @include flex(center,center){};
-    z-index: 4;
+    z-index: 6;
     .fiveballs{}
   }
   .whatAction{
@@ -329,6 +329,7 @@ body {@include bg_ball();
         }
       }
     }
+    
   }
 }
 //=========↓↓↓======도감전체===========↓↓↓=====도감전체============
