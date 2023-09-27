@@ -43,7 +43,7 @@ const MyPokemon = (props: Props) => {
                     총&nbsp;<span>{boxList.length}</span>&nbsp;마리
                 </h3>
 
-                <section className='pokemonList'>
+                <section className='pokemonList' style={{marginBottom:'100px'}}>
                     {
                         boxList.map((boxList:any)=>(
                             <div className='eachPokemon' key={boxList.date}>

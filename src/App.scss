@@ -282,7 +282,6 @@ body {@include bg_ball();
         z-index: 3;
       }
     }
-    // display: none;
     opacity: 0;
     transition: .3s;
   }
@@ -582,7 +581,8 @@ body {@include bg_ball();
 //=========↓↓↓======내포켓몬===========↓↓↓=====마이페이지============
 .myPkm{
   background-color: $color-bg;
-  .forWrap{height: 100vh;}
+  h1{width: 180px;}
+  .forWrap{height: 100%;}
   .collectGauge{
     width: 180px; height: 45px;
     position: absolute; top: 25%; left: 50%;
