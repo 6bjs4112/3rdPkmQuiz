@@ -2,7 +2,7 @@
 
 $color-main:#0E1F40;
 $color-sub:#86B5DF;
-$color-bg:#F6F6F6;
+$color-bg:#FFF;
 
 @mixin bg_ball(){
   background-image: url('../public/img/bg_veryBig.png');
@@ -28,9 +28,10 @@ $color-bg:#F6F6F6;
   font-style: normal;
 }
 // html,body,main, #root{height: 100%;}
-html{}
+
 body {@include bg_ball();
   margin: 0;  padding: 0;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 //=========↓↓↓======홈 메인화면===========↓↓↓=====================
 .homepage{
@@ -581,7 +582,8 @@ body {@include bg_ball();
 }
 //=========↓↓↓======내포켓몬===========↓↓↓=====마이페이지============
 .myPkm{
-  background-color: rgb(134, 181, 223,0.5) ;
+  background-color: $color-bg;
+  .forWrap{height: 100vh;}
   .collectGauge{
     width: 180px; height: 45px;
     position: absolute; top: 25%; left: 50%;
