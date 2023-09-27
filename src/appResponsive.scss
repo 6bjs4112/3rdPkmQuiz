@@ -20,6 +20,7 @@
         }
         .myPkm{
             .forWrap{height: 100vh;}
+            
         }
     }
     .detail {
@@ -157,7 +158,7 @@
 }
 //pc버전
 @media (min-width: 900px){
-    main{background-color: rgba(0, 0, 0, 0.25);}
+    body{background-color: rgba(0, 0, 0, 0.25);}
     body {
         width: 100%;
         .homepage, .quiz, .pokedex, .detail, .myPkm{
@@ -179,6 +180,7 @@
             .whatScript{width: 430px;}
             .runScript{width: 430px;}
         }
+        .myPkm{.pokemonList{margin-bottom: 200px !important;}}
     }
     // .pokedex::-webkit-scrollbar{//스크롤바 전체
     //     width: 15px; 
