@@ -135,11 +135,11 @@ axios.get('http://localhost:3030/coin')
               }          
         </section>
         
-        <a className='upBtn' onClick={scrollToTop}>
-          <img src='/3rdPkmQuiz/img/icon/upBtn_small.png'/>
-        </a>
 
         <nav className='botNav'>
+          <a className='upBtn' onClick={scrollToTop}>
+            <img src='/3rdPkmQuiz/img/icon/upBtn_small.png'/>
+          </a>
           <div className='navWrap'>
             <figure className='navBtn'>
                 <Link to="/">
