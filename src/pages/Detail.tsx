@@ -23,7 +23,7 @@ const Detail = (props: Props) => {
   const [boxList, setBoxList] = useState<[]>([]);
   useEffect(() => {
     axios
-      .get('http://localhost:3030')
+      .get('http://localhost:3000')
       .then((res)=>{
           setBoxList(res.data)
       })
@@ -37,7 +37,7 @@ const Detail = (props: Props) => {
   //구입하기
   const [coinBag, setCoinBag] = useState<[]>([]);
   const purchase= function(){
-    axios.get('http://localhost:3030/coin')
+    axios.get('http://localhost:3000/coin')
     .then((res)=>{
       let howManyCoins = res.data.coinAmount
       setCoinBag(howManyCoins)
@@ -49,9 +49,9 @@ const Detail = (props: Props) => {
 
       if ( howManyCoins >= eachPrice){
         //코인 소모
-        axios.post('http://localhost:3030/useCoin',{coinAmount:eachPrice})
+        axios.post('http://localhost:3000/useCoin',{coinAmount:eachPrice})
         //포켓몬 구입
-        axios.post('http://localhost:3030/addPokemon',{id:pokemonData[0].id, name:pokemonData[0].speciesData.names[2]?.name,date:Date.now()})
+        axios.post('http://localhost:3000/addPokemon',{id:pokemonData[0].id, name:pokemonData[0].speciesData.names[2]?.name,date:Date.now()})
         
         Swal.fire({
           text: `${pokemonData[0].speciesData.names[2]?.name} (을/를) 구입했습니다!`,

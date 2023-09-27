@@ -9,7 +9,7 @@ const MyPokemon = (props: Props) => {
     //퀴즈로 잡은 포켓몬 불러오기
     const [boxList, setBoxList] = useState<[]>([]);
     axios
-        .get('http://localhost:3030')
+        .get('http://localhost:3000')
         .then((res)=>{
             setBoxList(res.data)
         })
