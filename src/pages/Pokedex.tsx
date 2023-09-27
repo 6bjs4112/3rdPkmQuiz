@@ -63,7 +63,7 @@ console.log(pokemonData);
 
 //코인 데이터 가져오기
 const [coinBag, setCoinBag] = useState<number>();
-axios.get('http://localhost:3000/coin')
+axios.get('https://port-0-pkmquizserver-euegqv2bln1go1zj.sel5.cloudtype.app/coin')
   .then((res)=>{
     setCoinBag(res.data.coinAmount)    
   })
