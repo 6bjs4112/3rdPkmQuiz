@@ -232,7 +232,6 @@ const Quiz = (props: Props) => {
             </figure>
             
             <figure className='guessWho'>
-            {/* <img src={obj.sprites.versions['generation-v']['black-white']['animated']['front_default']} /> */}
             {/* <img className={imgClassName} src={obj.sprites.front_default} /> */}
             <img className={imgClassName} src={obj.sprites.other.home.front_default} />
             </figure>

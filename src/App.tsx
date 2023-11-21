@@ -1,6 +1,6 @@
 import './App.scss';
 import './appResponsive.scss';
-import {Route, Routes, Link, HashRouter,BrowserRouter} from 'react-router-dom';
+import {Route, Routes,BrowserRouter} from 'react-router-dom';
 import Home from './Home';
 import Quiz from './pages/Quiz';
 import Pokedex from './pages/Pokedex';
